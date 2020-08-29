@@ -32,7 +32,7 @@ import calendar
 from datetime import datetime
 
 
-def render_calendar(y, m):
+def render_calendar(y=2020, m=8):
     return calendar.month(y, m)
 
 
