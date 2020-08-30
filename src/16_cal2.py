@@ -32,14 +32,17 @@ import calendar
 from datetime import datetime
 
 
-def render_calendar(y=2020, m=8):
+if len(sys.argv) > 0:
+    try:
+        year = int(sys.argv[1])
+        month = int(sys.argv[2])
+    except IndexError:
+        year = 2020
+        month = 8
+
+
+def render_calendar(y, m):
     return calendar.month(y, m)
 
-
-# testing = calendar.month(2014, 2)
-# print(testing)
-
-month = int(input('Month:  ') or "8")
-year = int(input('Year: ') or "2020")
 
 print(render_calendar(year, month))
