@@ -33,7 +33,7 @@ from datetime import datetime
 
 try:
     if len(sys.argv) == 2:
-        year = 2020
+        year = datetime.now().year
         month = int(sys.argv[1])
 
     else:
