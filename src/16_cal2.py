@@ -31,7 +31,6 @@ import sys
 import calendar
 from datetime import datetime
 
-print(f'Length: {len(sys.argv)}')
 try:
     if len(sys.argv) == 2:
         year = 2020
@@ -41,8 +40,8 @@ try:
         year = int(sys.argv[1])
         month = int(sys.argv[2])
 except IndexError:
-    year = 2020
-    month = 8
+    year = datetime.now().year
+    month = datetime.now().month
 
 
 def render_calendar(y, m):
