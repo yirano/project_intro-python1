@@ -10,10 +10,10 @@ for more info regarding list comprehensions.
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = [item+1 for item in range(5)]
+y = [item + 1 for item in range(5)]
 print(y)
 
-z = list(map(lambda z: z+1, range(5)))
+z = list(map(lambda z: z + 1, range(5)))
 print(z)
 
 # Write a list comprehension to produce the cubes of the numbers 0-9:
@@ -44,6 +44,7 @@ x = input("Enter comma-separated numbers: ").split(',')
 # What do you need between the square brackets to make it work?
 
 y = [int(even) for even in x if int(even) % 2 == 0]
+
 print(y)
 
 z = list(filter(lambda even: int(even) % 2 == 0, x))
