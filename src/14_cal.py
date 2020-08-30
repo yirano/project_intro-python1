@@ -39,7 +39,7 @@ def render_calendar(y=2020, m=8):
 # testing = calendar.month(2014, 2)
 # print(testing)
 
-month = input('Month:  ')
-year = input('Year: ')
+month = int(input('Month:  ') or "8")
+year = int(input('Year: ') or "2020")
 
-print(render_calendar(int(year), int(month)))
+print(render_calendar(year, month))
