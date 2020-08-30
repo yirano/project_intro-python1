@@ -36,11 +36,15 @@ try:
         year = datetime.now().year
         month = int(sys.argv[1])
 
+    elif len(sys.argv) > 3:
+        exit("Acceptable inputs are either [year] [month] or [month].")
+
     else:
         year = int(sys.argv[1])
         month = int(sys.argv[2])
 except IndexError:
-    exit("Please provide a month, year, or both.")
+    year = datetime.now().year
+    month = datetime.now().month
 
 
 def render_calendar(y, m):
