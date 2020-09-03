@@ -12,7 +12,7 @@ import getpass
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-print(f'sys.argv: {sys.argv} \n')
+print(f'sys.argv: {sys.argv[1:]} \n')
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
@@ -35,4 +35,4 @@ print(f'Current working directory (cwd): {os.getcwd()} \n')
 # Print out your machine's login name
 # YOUR CODE HERE
 print(f'Machine\'s login name: {getpass.getuser()} \n')
-print(f'Machine\'s login name: {os.getusername()}')
+# print(f'Machine\'s login name: {os.getusername()}')
