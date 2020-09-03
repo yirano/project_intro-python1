@@ -36,12 +36,9 @@ try:
         year = datetime.now().year
         month = int(sys.argv[1])
 
-    elif len(sys.argv) > 3:
-        exit("Acceptable inputs are either [month] [year] or just [month].")
-
     else:
-        year = int(sys.argv[2])
-        month = int(sys.argv[1])
+        year = int(sys.argv[1])
+        month = int(sys.argv[2])
 except IndexError:
     year = datetime.now().year
     month = datetime.now().month
