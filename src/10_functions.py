@@ -12,7 +12,14 @@ num = input("Enter a number: ")
 num = int(num)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
-
+# eo = is_even(num)
 # YOUR CODE HERE
+# if eo == True:
+#     print("Even!")
+# else:
+#     print("Odd")
 
-print(is_even(num))
+# print("Even!") if eo == True else print("Odd")
+
+eo = num % 2 == 0 and "Even!" or "Odd"
+print(eo)
